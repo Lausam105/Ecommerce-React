@@ -1,0 +1,11 @@
+.NavBar{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+     background: rgba(6, 6, 6, 0.315);
+}
+
+.carrito{
+    width:30px;
+}
+
