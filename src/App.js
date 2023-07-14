@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import 'bulma/css/bulma.css'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     return (
         <div className="contenedor">
           <NavBar/>
-          <ItemListContainer  greeting={'Bienvenidos'}/>
+          <ItemListContainer greeting={'Bienvenidos'}/>
         </div>
 
         
