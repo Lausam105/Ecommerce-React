@@ -2,13 +2,13 @@
      display:flex;
      flex-direction: row;
      align-items:center;
-     justify-content: space-between;
+     justify-content: space-evenly;
      height: 20vh;
      background: linear-gradient(90deg, rgba(2,1,27,1) 0%, rgba(5,15,73,1) 13%, rgba(9,30,121,1) 64%, rgba(32,31,31,1) 100%);
 }
 
 .carrito{
-    color:antiquewhite;
+    
     width:30px;
 }
 .boton{
