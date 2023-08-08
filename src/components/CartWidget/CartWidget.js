@@ -7,7 +7,7 @@ const CartWidget = () => {
         <div>
             
             <FontAwesomeIcon icon={faCartShopping} style={{color:"white", fontSize:"30px"}}/>
-             0
+             <div>0</div>
         </div>
 )
 }

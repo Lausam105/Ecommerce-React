@@ -1,5 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
-import logo from "../../img/logo.png"
+import logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
 
 
 function NavBar(){
@@ -7,9 +8,9 @@ function NavBar(){
         <nav className="NavBar">
             <img style={{width:"200px"}} src={logo} alt="logo"/>
         <div>
-             <button className="button is-dark boton">Productos</button>
-             <button className="button is-dark boton">Ofertas</button>
-             <button className="button is-dark boton">Contacto</button>
+             <Link to="/" className="button is-dark boton">Home</Link>
+             <Link to="catalogo" className="button is-dark boton">Catálogo</Link>
+             <Link to="contacto" className="button is-dark boton">Contacto</Link>
         </div>
      <CartWidget/>
      </nav>
