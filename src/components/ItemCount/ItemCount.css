@@ -17,6 +17,11 @@ h4{
 
 
 button{
+    
     background-color: rgb(202, 95, 65);
     
+}
+
+.but_add{
+    width:200px;
 }
