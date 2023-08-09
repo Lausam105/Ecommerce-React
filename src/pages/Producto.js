@@ -18,8 +18,8 @@ function Producto(){
             <img src={image2} alt="producto"/>
             <h2>{title}</h2>
             <h2>{description}</h2>
-            <h2>{price}</h2>
-            <ItemCount initial={1} stock={10} onAdd={(quantity) => ('Cantidad agregada', quantity)}/>
+            <h2>${price}</h2>
+            <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
             <Link to="/catalogo">Volver</Link>
         </div>
     )

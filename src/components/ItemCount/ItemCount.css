@@ -1,0 +1,22 @@
+.Counter{
+    display:flex;
+    flex-direction: column;
+}
+
+.IncreDecre{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+h4{
+
+}
+
+
+
+button{
+    background-color: rgb(202, 95, 65);
+    
+}
