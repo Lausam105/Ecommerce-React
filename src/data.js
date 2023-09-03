@@ -86,5 +86,21 @@ const lista_productos = [
         
 ]
 
+export const getProducts = () => {
+        return new Promise ((resolve) =>{
+                setTimeout(()=>{
+                        resolve(lista_productos)
+                }, 500)
+        })
+}
+
+export const getProductById = (productId) => {
+        return new Promise((resolve)=>{
+                setTimeout(()=> {
+                        resolve(lista_productos.find(prod =>prod.id === productId))
+                }, 500)
+        })
+}
+
 
 export default lista_productos;
