@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import lista_productos from "../data";
+import products from "../data";
 import "./Productos.css";
 
 
@@ -9,7 +9,7 @@ function Catalogo(){
             <h1>Pagina de Catálogo</h1>
             <Link to="/">Volver a la pagina principal</Link>  
             <div className="productos">
-               {lista_productos.map((producto)=>{
+               {products.map((producto)=>{
                 return(
                     <article className="juego">
                         <h5>{producto.title}</h5>

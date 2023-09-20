@@ -1,0 +1,19 @@
+.juego{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+}
+
+img{
+    object-fit: cover;
+}
+
+.masInfo{
+    border: 2px solid black;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(60, 66, 182);
+    text-align: center;
+    color: black;
+}

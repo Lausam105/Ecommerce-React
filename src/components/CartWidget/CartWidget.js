@@ -5,12 +5,12 @@ import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-    const { totalQuantity } = useContext(CartContext)
+    const { quantity } = useContext(CartContext)
     return (
         <div>
-           <Link to='/cart' style={{display: totalQuantity > 0 ? 'block' : 'none'}}>
+           <Link to='/cart'>
             <FontAwesomeIcon icon={faCartShopping} style={{color:"white", fontSize:"30px"}}/>
-            { totalQuantity }
+            { quantity }
             </Link> 
              
         </div>

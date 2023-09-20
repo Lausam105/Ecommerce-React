@@ -7,9 +7,9 @@ import { CartItem } from "../CartItem/CartItem";
 
 
 const Cart = ()=>{
-    const { cart, clearCart, totalQuantity, total} = useContext(CartContext)
+    const { cart, clearCart, quantity, total} = useContext(CartContext)
 
-    if(totalQuantity === 0) {
+    if(quantity === 0) {
         return (
             <div>
                 <h1>No hay items en el carrito</h1>
@@ -24,6 +24,7 @@ const Cart = ()=>{
             <h3>Total: ${total}</h3>
             <button onClick={()=> clearCart()}>Limpiar Carrito</button>
             <Link to='/checkout'>Checkout</Link>
+            <Link to='/catalogo'>Volver</Link>
         </div>
     )
 

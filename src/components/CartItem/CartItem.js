@@ -1,51 +1,39 @@
-import { CartContext } from "../../context/CartContext"
-import React, {useContext} from "react"
+import { CartContext } from '../../context/CartContext';
+import React from 'react';
+import { useContext } from 'react';
 
 
 
-export const CartItem = ({ id, price, image, title, quantity}) => {
-    const { removeItem, total } = useContext(CartContext)
 
+export const CartItem = ({ id, price, image1, title, quantity }) => {
+    const { removeItem} = useContext(CartContext)
+
+     const total = price * quantity;
     return (
-        <article>
-            <header>
-                <h2>{title}</h2>
-            </header>
-
+        <div className='container'>
             <picture>
-                <img src={image} alt="product"/>
+
+                <img src={image1} alt={title} className="imgContainer"/>
+
             </picture>
+            <div className='productsCategorie'>
+                <h2>
+                    {title}
+                </h2>
+                <p>
+                    Cantidad: {quantity}
+                </p>
+                <p>
+                    Subtotal: {quantity * price}
+                </p>
+                <section>
+                    <h3>Total a pagar: ${total}</h3>
+                </section>
+                <button onClick={() => removeItem(id)}>Eliminar</button>
+                
+            </div>
+        </div>
 
-            <section>
-                <h3>
-                Precio: ${price}
-                </h3>
-            </section>
-
-            <section>
-                <h4>
-                Cantidad: ${quantity}
-                </h4>
-            </section>
-
-            <section>
-                <h4>
-                Subtotal: ${price * quantity}
-                </h4>
-            </section>
-
-            <section>
-                <h3>
-                Total a pagar: ${total}
-                </h3>
-            </section>
-
-            <section>
-                <h3>
-                <button onClick={()=> removeItem(id)}>Eliminar</button>
-                </h3>
-            </section>
-        </article>
     )
-}
+};
 

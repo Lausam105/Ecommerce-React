@@ -5,8 +5,10 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 
 
 
+
+
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
+    const [products, setProduct] = useState(null)
 
     const { itemId } = useParams()
 
@@ -22,7 +24,8 @@ const ItemDetailContainer = () => {
 
     return(
         <div>
-            <ItemDetail {...product}/>
+            <ItemDetail {...products}/>
+            
         </div>
     )
 }
